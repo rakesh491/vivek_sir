@@ -1,7 +1,6 @@
 package com.example.rakesh.vivek_sir;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         dcr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, new_window.class);
+                Intent myIntent = new Intent(MainActivity.this, rakesh.class);
                 myIntent.putExtra("key", url_dcr); //Optional parameters
                 MainActivity.this.startActivity(myIntent);
             }
@@ -106,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         stud_book_rec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, webi.class);
+                Intent myIntent = new Intent(MainActivity.this, rakesh.class);
                 myIntent.putExtra("key", url_book_rec); //Optional parameters
                 MainActivity.this.startActivity(myIntent);
             }
